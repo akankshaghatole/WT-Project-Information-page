@@ -1,0 +1,86 @@
+#body
+{
+	padding-top: 40px;
+	background-image: url("background.jpg");
+	background-size: cover;
+	position: relative;
+}		
+.navbar-dark
+{
+    background: rgba(0, 0, 0, 0.85);
+    font-size: 20px;
+    font-weight: lighter;
+}
+.navbar-dark ul li
+{
+	margin:0px 5px;
+}
+.navbar-dark ul li:hover
+{
+	border-bottom: 1px solid #d9ba85;
+	color: #8199b9;
+}
+.brandname
+{
+	color: #8199b9;
+}
+.head
+{
+    padding-top: 40px;
+    text-align: center;
+	padding: 0;
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+	color: #eee;
+}
+.head h1
+{
+    font-size: 60px;
+}
+.title
+{
+	color: whitesmoke;
+	font-family: 'Times New Roman', Times, serif;
+}
+.container
+{
+    align-items: center;
+    justify-content: center; 
+    padding: 40px 40px;
+    margin-top: 20px;
+}
+#table
+{
+    display:none;
+    padding: 10px;
+    background: rgba(0,0,0,0.55);
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	color: #fff;
+	border: none;
+}
+#table th
+{
+	color: #46b0b8;
+	padding-right: 10px;
+}
+.contain
+{
+    padding-top: 0px;
+    margin-top: 80px;
+    text-align: center;
+}
+.container select
+{
+	width: 100%;
+	height:50px;
+	margin: 5px;
+	padding: 5px;
+	border-radius: 3px;
+	border:1px solid rgba(40, 82, 160, 0.6);
+	background-color: #000000;
+	color:#46b0b8;
+}
