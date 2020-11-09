@@ -1,6 +1,6 @@
 <!DOCTYPE html>
     <head>
-        <title>Dinne In Restaurant_Menu</title>
+        <title>Information</title>
         
 		<link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -12,61 +12,76 @@
        
     </head>
   <body id="body">
-    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+  <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
       <div class="collapse navbar-collapse" id="Navbar">
         <ul class="navbar-nav mr-auto">
-          <li id="btn1" class="nav-item active"><a class="nav-link" href="#"><span class="brandname">Dinne In</span> Menu is Here</a></li>
+          <li id="btn1" class="nav-item active"><a class="nav-link" href="#"><span class="brandname">Heatlhcheck</span> yourself over here </a></li>
+          <li id="btn2" class="nav-item active"><a class="nav-link" href="#"><span class="brandname">Camps</span> Blood Donation & testing  </a></li>
+          <li id="btn2" class="nav-item active"><a class="nav-link" href="#"><span class="brandname">Home</span> Go back to home page </a></li>
+          
         </ul>
       </div>
     </nav>
     <div class="head">
-      <h1>Welcome to <span class="title">Dinne In !!</span></h1>
+      <h1>General Awareness </h1>
+    </div>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" id="image" src="image/slide1.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" id="image" src="image/sideimage.jpg" alt="Second slide" >
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" id="image" src="image/sideimage.jpg" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <div class="head">
+      <h1>General Awareness</h1>
     </div>
     <div class="container">
-      <select name="item restaurant-dropdown restaurant" class="custom-select custom-select-lg mb-3" id="restaurant">
-        <option value="">Select Menu</option>
+      <select name="item restaurant-dropdown restaurant" class="custom-select custom-select-lg mb-3" id="disease">
+        <option value="">Disease List</option>
       </select>
       <br>    
-      <table id="table" class="table table-light table table-hover table-bordered table_data">
+      <table id="table" class="table table-striped">
       <tr>
         <th>Name</th>
-        <td id="menuname"></td>
+        <td id="name"></td>
       </tr>
       <tr>
-        <th>ID</th>
-        <td id="id"></td>
-      </tr>
-      <tr>
-        <th>Short Name</th>
+        <th>Scientific Name</th>
         <td id="sname"></td>
       </tr>
       <tr>
-        <th>Description</th>
+        <th>Symptoms Description</th>
         <td id="descp"></td>
       </tr>
       <tr>
-        <th>Price Small</th>
-        <td id="psmall"></td>
+        <th>Precautions</th>
+        <td id="pre"></td>
       </tr>
       <tr>
-        <th>Price Large</th>
-        <td id="plarge"></td>
+        <th>Cause </th>
+        <td id="cause"></td>
       </tr>
-      <tr>
-        <th>Small Portion Name</th>
-        <td id="spname"></td>
-      </tr>
-      <tr>
-        <th>Large Portion Name</th>
-        <td id="lpname"></td>
-      </tr>
-      </table>
-    </div> 
-    <footer class="page-footer font-small stylish-color-dark bg-dark pt-4" style="position:fixed; bottom:0;width: 100%;">
-      <div class="footer-copyright text-center py-3" style="background:#000;">© 2020 Copyright:
-              <a href="mailhere:asghatole@mitaoe.ac.in">asghatole@mitaoe.ac.in</a>
-      </div>
-    </footer>
+      
+    <!--footer-->
 		<script src="jquery-3.5.1.min.js"></script> 
     <script src="script.js" defer></script>   
   </body>

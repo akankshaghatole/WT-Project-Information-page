@@ -1,8 +1,8 @@
-let base_url = "menu.php";
+let base_url = "list.php";
 $("document").ready(function()
 {
     getData();
-    document.querySelector("#restaurant").addEventListener("change",GetLI);
+    document.querySelector("#disease").addEventListener("change",GetLI);
 });
 function getData() 
 {
@@ -14,7 +14,7 @@ function getData()
             let option = document.createElement("option");
             option.textContent = value[a].name;
             option.value = value[a].name; 
-            document.querySelector('#restaurant').appendChild(option);
+            document.querySelector('#disease').appendChild(option);
         }
     });
 }     
@@ -27,8 +27,8 @@ function GetLI(k)
         if(val != null)
         {
             let x = val;
-            let psmall = x.price_small;         
-            if(psmall == null)
+            let pre = x.precaution;         
+            if(pre == null)
             {
                 psmall = "Not available";
             }
@@ -37,24 +37,12 @@ function GetLI(k)
             {
                 descrp = "Description not available";
             }
-            let smallpname = x.small_portion_name;
-            if(smallpname == null)
-            {
-                smallpname = "Not Available";
-            }
-            let largepname = x.large_portion_name;
-            if(largepname == null)
-            {
-                largepname = "Not Available";
-            }
-            document.querySelector("#menuname").textContent = x.name;
-            document.querySelector("#id").textContent = x.id;
-            document.querySelector("#sname").textContent = x.short_name;
+            document.querySelector("#name").textContent = x.name;
+            document.querySelector("#sname").textContent = x.sci_name;
             document.querySelector("#descp").textContent = descrp;
-            document.querySelector("#psmall").textContent = psmall;
-            document.querySelector("#plarge").textContent = x.price_large;
-            document.querySelector("#spname").textContent = smallpname;
-            document.querySelector("#lpname").textContent = largepname;
+            document.querySelector("#pre").textContent = pre;
+            document.querySelector("#cause").textContent = x.cause;
+           
         }
         document.getElementById("table").style.display = "block";
     });

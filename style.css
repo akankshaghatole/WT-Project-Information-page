@@ -1,9 +1,10 @@
 #body
 {
 	padding-top: 40px;
-	background-image: url("background.jpg");
 	background-size: cover;
 	position: relative;
+	background-color: rgb(191, 241, 225);
+	
 }		
 .navbar-dark
 {
@@ -18,7 +19,7 @@
 .navbar-dark ul li:hover
 {
 	border-bottom: 1px solid #d9ba85;
-	color: #8199b9;
+	color: #70c76d;
 }
 .brandname
 {
@@ -37,6 +38,7 @@
 }
 .head h1
 {
+	color: #000000;
     font-size: 60px;
 }
 .title
@@ -49,22 +51,29 @@
     align-items: center;
     justify-content: center; 
     padding: 40px 40px;
-    margin-top: 20px;
+	margin-top: 20px;
+	background-color: #889b9c;
+}
+#image{
+	height:15cm;
+	width: 10cm;
 }
 #table
 {
-    display:none;
-    padding: 10px;
-    background: rgba(0,0,0,0.55);
+    display:block;
+	padding: 10px;
 	width: 600px;
 	margin-left: auto;
 	margin-right: auto;
-	color: #fff;
-	border: none;
+	color: rgb(26, 24, 24);
+	border-color: black;
+	border-style: solid;
+	background-color: #889b9c;
+	
 }
 #table th
 {
-	color: #46b0b8;
+	color: #0e0f0f;
 	padding-right: 10px;
 }
 .contain
@@ -76,11 +85,15 @@
 .container select
 {
 	width: 100%;
-	height:50px;
+	height:fit-content;
 	margin: 5px;
 	padding: 5px;
 	border-radius: 3px;
-	border:1px solid rgba(40, 82, 160, 0.6);
+	border:1px solid rgba(100, 122, 163, 0.6);
 	background-color: #000000;
 	color:#46b0b8;
+}
+
+#btn2{
+	
 }
